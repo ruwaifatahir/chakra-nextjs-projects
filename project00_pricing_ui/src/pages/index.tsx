@@ -1,12 +1,13 @@
 import type { NextPage } from "next";
 
-import { Header, Pricing } from "../components";
+import { Header, Pricing, Features } from "../components";
 
 const Home: NextPage = () => {
   return (
     <>
       <Header />
       <Pricing />
+      <Features />
     </>
   );
 };

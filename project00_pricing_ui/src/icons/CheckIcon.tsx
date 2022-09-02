@@ -1,6 +1,6 @@
 import { NextComponentType } from "next";
 
-export const CheckIcon: NextComponentType = () => {
+const CheckIcon: NextComponentType = () => {
   return (
     <svg
       width="22"
@@ -18,3 +18,4 @@ export const CheckIcon: NextComponentType = () => {
     </svg>
   );
 };
+export default CheckIcon;
