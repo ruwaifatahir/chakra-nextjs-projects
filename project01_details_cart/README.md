@@ -1,1 +1,1 @@
-##Demo Link: https://chakra-details-cart.vercel.app/
+##DemoLink: https://chakra-details-cart.vercel.app/
