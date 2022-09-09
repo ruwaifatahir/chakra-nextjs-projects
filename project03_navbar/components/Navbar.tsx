@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   HStack,
-  VStack,
   Center,
   Text,
   Image,
@@ -11,8 +10,6 @@ import {
   Hide,
   Show,
   useDisclosure,
-  List,
-  ListItem,
 } from "@chakra-ui/react";
 
 import Link from "next/link";
@@ -34,7 +31,6 @@ const Navbar = () => {
               spacing={{ base: 5, md: 1, lg: 10, xl: 20 }}
               fontSize="md"
               fontWeight={500}
-              // display={{ base: "none", lg: "flex" }}
             >
               <Text as={Link} href="/how">
                 How it Works

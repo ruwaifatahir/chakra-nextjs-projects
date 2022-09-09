@@ -1,29 +1,12 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  VStack,
-  Center,
-  Text,
-  Image,
-  IconButton,
-  Button,
-  Hide,
-  Show,
-  useDisclosure,
-  List,
-  ListItem,
-} from "@chakra-ui/react";
+import { Box, HStack, VStack, Text, Button, Show } from "@chakra-ui/react";
 
 import Link from "next/link";
 
 const DropNav = () => {
   return (
     <Show below="lg">
-      {/* <Divider /> */}
       <VStack
-        // bg="gray.400"
-        height={{base:"50%", md:"32%"}}
+        height={{ base: "50%", md: "32%" }}
         width="full"
         boxShadow="dark-lg"
         align="start"
@@ -53,10 +36,15 @@ const DropNav = () => {
           </Text>
         </Box>
 
-        <HStack spacing={{base:7, md: 40}} justify="flex-end" w="full">
+        <HStack spacing={{ base: 7, md: 40 }} justify="flex-end" w="full">
           <Button variant="ghost">Sign In</Button>
-          {/* <Button variant="solid" color="white" bg="black" size ="lg" >Get Started</Button> */}
-          <Button size="sm" width={{base:"180px",md:"380px"}} bg="black" color="white" p="18px  ">
+          <Button
+            size="sm"
+            width={{ base: "180px", md: "380px" }}
+            bg="black"
+            color="white"
+            p="18px  "
+          >
             Get Started
           </Button>
         </HStack>
