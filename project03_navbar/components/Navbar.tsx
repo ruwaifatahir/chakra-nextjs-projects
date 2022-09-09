@@ -53,7 +53,12 @@ const Navbar = () => {
                 width="230px"
                 bg="black"
                 color="white"
-                p="18px  "
+                p="18px"
+                _hover={{
+                  bg: "transparent",
+                  color: "black",
+                  border: "2px solid black",
+                }}
               >
                 Get Started
               </Button>
@@ -66,7 +71,9 @@ const Navbar = () => {
                 onClick={onToggle}
                 aria-label="Hamburger Icon"
                 variant="ghost"
-                _hover={{ bg: "transparent" }}
+                _hover={{
+                  bg: "transparent",
+                }}
                 _focus={{ bg: "transparent" }}
                 icon={
                   isOpen ? (
