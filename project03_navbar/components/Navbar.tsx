@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   HStack,
-  VStack,
   Center,
   Text,
   Image,
@@ -11,8 +10,6 @@ import {
   Hide,
   Show,
   useDisclosure,
-  List,
-  ListItem,
 } from "@chakra-ui/react";
 
 import Link from "next/link";
@@ -34,7 +31,6 @@ const Navbar = () => {
               spacing={{ base: 5, md: 1, lg: 10, xl: 20 }}
               fontSize="md"
               fontWeight={500}
-              // display={{ base: "none", lg: "flex" }}
             >
               <Text as={Link} href="/how">
                 How it Works
@@ -53,7 +49,12 @@ const Navbar = () => {
                 width="230px"
                 bg="black"
                 color="white"
-                p="18px  "
+                p="18px"
+                _hover={{
+                  bg: "transparent",
+                  color: "black",
+                  border: "2px solid black",
+                }}
               >
                 Get Started
               </Button>
@@ -66,7 +67,9 @@ const Navbar = () => {
                 onClick={onToggle}
                 aria-label="Hamburger Icon"
                 variant="ghost"
-                _hover={{ bg: "transparent" }}
+                _hover={{
+                  bg: "transparent",
+                }}
                 _focus={{ bg: "transparent" }}
                 icon={
                   isOpen ? (
